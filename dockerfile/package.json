@@ -1,0 +1,14 @@
+{
+  "name": "basic",
+  "description": "A basic web service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Max Schoening <mschoening@google.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ffmpeg": "0.0.4"
+  }
+}

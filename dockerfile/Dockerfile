@@ -1,5 +1,10 @@
-FROM golang
-ADD . /go/src/github.com/max/src-reasoning/docker-example
-RUN go install github.com/max/src-reasoning/docker-example
-CMD ["/go/bin/docker-example"]
+FROM node:alpine
+
+RUN apk update
+RUN apk add --udpate ffmpeg
+
+ADD . /usr/src/app
+WORKDIR /usr/src/app
+RUN npm install
 EXPOSE 3000
+CMD [ "npm", "start" ]
