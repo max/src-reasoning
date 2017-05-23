@@ -1,7 +1,6 @@
 FROM node:alpine
 
-RUN apk update
-RUN apk add --udpate ffmpeg
+RUN apk add --update ffmpeg
 
 ADD . /usr/src/app
 WORKDIR /usr/src/app
