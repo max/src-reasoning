@@ -1,5 +1,5 @@
 {
-  "name": "basic",
+  "name": "dockerfile",
   "description": "A basic web service",
   "version": "1.0.0",
   "main": "index.js",
